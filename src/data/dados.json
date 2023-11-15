@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "teste",
+      "idade": 20,
+      "curso": "TDS"
+    },
+    {
+      "id": 4,
+      "nome": "EA",
+      "idade": 10,
+      "curso": "FIFA"
+    }
+  ],
+  "cursos": [
+    {
+      "idCurso": 1,
+      "nome_curso": "back end",
+      "ch_curso": 96,
+      "professor": "teste"
+    }
+  ]
+}
