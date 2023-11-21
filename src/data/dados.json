@@ -1,24 +1,49 @@
 {
-  "users": [
+  "medicamento": [
     {
-      "id": 1,
-      "nome": "teste",
-      "idade": 20,
-      "curso": "TDS"
+      "idMedicamento": 1,
+      "nome": "Zolpidem",
+      "fabricante": "Genérico",
+      "preco": 20.5,
+      "quantidade": 1
     },
     {
-      "id": 4,
-      "nome": "EA",
-      "idade": 10,
-      "curso": "FIFA"
+      "idMedicamento": 2,
+      "nome": "Zolpidemrrr",
+      "fabricante": "Genérictyyo",
+      "preco": 25.5,
+      "quantidade": 4
     }
   ],
-  "cursos": [
+  "cliente": [
     {
-      "idCurso": 1,
-      "nome_curso": "back end",
-      "ch_curso": 96,
-      "professor": "teste"
+      "idCliente": 1,
+      "nome": "Rafael",
+      "endereco": "R. Senac, 123",
+      "email": "rafael@gmail.com",
+      "telefone": "123456789"
+    }
+  ],
+  "fornecedor": [
+    {
+      "idFornecedor": 1,
+      "nome": "Genérico",
+      "endereco": "R. Sao leopoldo, 123",
+      "telefone": "123456789"
+    }
+  ],
+  "venda": [
+    {
+      "idVenda": 1,
+      "data": "20/11/2023",
+      "idMedicamento": 1,
+      "idCliente": 1
+    },
+    {
+      "idVenda": 2,
+      "data": "20/11/2023",
+      "idMedicamento": 1,
+      "idCliente": 1
     }
   ]
 }
