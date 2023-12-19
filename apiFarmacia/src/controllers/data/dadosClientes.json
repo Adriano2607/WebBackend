@@ -1,0 +1,40 @@
+{
+  "Cliente": [
+    {
+      "id": 1,
+      "nome": "Teste",
+      "endereco": "Teste",
+      "email": "Teste",
+      "Telefone": 123,
+      "_links": {
+        "self": {
+            "href": "/clientes/1"
+        }
+    }
+    },
+    {
+      "id": "2",
+      "nome": "Teste Dois",
+      "endereco": "1234",
+      "email": "teste@gmail.com",
+      "telefone": "12345",
+      "_links": {
+        "self": {
+            "href": "/clientes/2"
+        }
+    }
+    },
+    {
+      "id": "3",
+      "nome": "Teste Tres",
+      "endereco": "alo",
+      "email": "teste@teste.com",
+      "telefone": "1092830921",
+      "_links": {
+        "self": {
+            "href": "/clientes/3"
+        }
+    }
+    }
+  ]
+}
