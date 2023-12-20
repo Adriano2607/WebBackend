@@ -17,9 +17,24 @@ server.post('/medicamentos', (req, res) => {
     }
 })
 
-server.get('/medicamentos', (req, res) => {
-    return res.json(dadosMedicamentos.Medicamento)
-})
+
+
+server.get('/medicamentos/:id?', (req, res) => {
+    const medicamentoID = parseInt(req.params.id)
+
+    if (medicamentoID) {
+        const clienteIndex = dadosMedicamentos.Medicamento.findIndex(med => med.id === medicamentoID);
+
+        if (clienteIndex !== -1) {
+            const fornecedorEncontrado = dadosMedicamentos.Medicamento[clienteIndex];
+            return res.json(fornecedorEncontrado);
+        } else {
+            return res.status(404).json({ mensagem: 'Cliente não encontrado' });
+        }
+    } else {
+        return res.json(dadosMedicamentos.Medicamento);
+    }
+});
 
 server.put('/medicamentos/:id', (req, res) => {
     const medicamentoId = parseInt(req.params.id)

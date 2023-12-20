@@ -20,9 +20,24 @@ server.post('/clientes', (req, res) => {
 })
 
 // consumir dados da API === Read do CRUD
-server.get('/clientes', (req, res) => {
-    return res.json(dadosClientes.Cliente)
-})
+server.get('/clientes/:id?', (req, res) => {
+    const clienteId = req.params.id;
+
+    if (clienteId) {
+        const clienteIndex = dadosClientes.Cliente.findIndex(cliente => cliente.id === clienteId);
+
+        if (clienteIndex !== -1) {
+            const clienteEncontrado = dadosClientes.Cliente[clienteIndex];
+            return res.json(clienteEncontrado);
+        } else {
+            return res.status(404).json({ mensagem: 'Cliente não encontrado' });
+        }
+    } else {
+        return res.json(dadosClientes.Cliente);
+    }
+});
+
+
 
 // função para atualizar um usuario
 server.put('/clientes/:id', (req, res) => {

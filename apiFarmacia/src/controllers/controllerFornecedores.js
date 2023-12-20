@@ -17,9 +17,23 @@ server.post('/fornecedores', (req, res) => {
     }
 })
 
-server.get('/fornecedores', (req, res) => {
-    return res.json(dadosFornecedores.Fornecedor)
-})
+
+server.get('/fornecedores/:id?', (req, res) => {
+    const fornecedorID = parseInt(req.params.id)
+
+    if (fornecedorID) {
+        const clienteIndex = dadosClientes.Fornecedor.findIndex(fornecedor => fornecedor.id === fornecedorID);
+
+        if (clienteIndex !== -1) {
+            const fornecedorEncontrado = dadosFornecedores.Fornecedor[clienteIndex];
+            return res.json(fornecedorEncontrado);
+        } else {
+            return res.status(404).json({ mensagem: 'Cliente não encontrado' });
+        }
+    } else {
+        return res.json(dadosFornecedores.Fornecedor);
+    }
+});
 
 server.put('/fornecedores/:id', (req, res) => {
     const fornecedorId = parseInt(req.params.id)
