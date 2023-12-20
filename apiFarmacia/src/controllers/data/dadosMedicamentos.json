@@ -8,7 +8,16 @@
         "quantidade": 100,
         "_links": {
           "self": {
-              "href": "/medicamento/1"
+              "href": "/medicamentos/1"
+          },
+          "update": {
+            "href": "/medicamentos/1/update"
+          },
+          "delete": {
+            "href": "/medicamentos/1/delete"
+          },
+          "collection": {
+            "href": "/medicamentos"
           }
       }
       },
@@ -20,7 +29,16 @@
         "quantidade": 150,
         "_links": {
           "self": {
-              "href": "/medicamento/2"
+              "href": "/medicamentos/2"
+          },
+          "update": {
+            "href": "/medicamentos/2/update"
+          },
+          "delete": {
+            "href": "/medicamentos/2/delete"
+          },
+          "collection": {
+            "href": "/medicamentos"
           }
       }
       }

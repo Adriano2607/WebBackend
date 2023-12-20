@@ -8,6 +8,15 @@
         "_links": {
           "self": {
               "href": "/vendas/1"
+          },
+          "update": {
+            "href": "/vendas/1/update"
+          },
+          "delete": {
+            "href": "/vendas/1/delete"
+          },
+          "collection": {
+            "href": "/vendas"
           }
       }
       },
@@ -19,6 +28,15 @@
         "_links": {
           "self": {
               "href": "/vendas/2"
+          },
+          "update": {
+            "href": "/vendas/2/update"
+          },
+          "delete": {
+            "href": "/vendas/2/delete"
+          },
+          "collection": {
+            "href": "/vendas"
           }
       }
       }

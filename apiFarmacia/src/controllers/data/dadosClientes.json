@@ -8,9 +8,18 @@
       "Telefone": 123,
       "_links": {
         "self": {
-            "href": "/clientes/1"
+          "href": "/clientes/1"
+        },
+        "update": {
+          "href": "/clientes/1/update"
+        },
+        "delete": {
+          "href": "/clientes/1/delete"
+        },
+        "collection": {
+          "href": "/clientes"
         }
-    }
+      }
     },
     {
       "id": "2",
@@ -20,21 +29,18 @@
       "telefone": "12345",
       "_links": {
         "self": {
-            "href": "/clientes/2"
+          "href": "/clientes/2"
+        },
+        "update": {
+          "href": "/clientes/2/update"
+        },
+        "delete": {
+          "href": "/clientes/2/delete"
+        },
+        "collection": {
+          "href": "/clientes"
         }
-    }
-    },
-    {
-      "id": "3",
-      "nome": "Teste Tres",
-      "endereco": "alo",
-      "email": "teste@teste.com",
-      "telefone": "1092830921",
-      "_links": {
-        "self": {
-            "href": "/clientes/3"
-        }
-    }
+      }
     }
   ]
 }

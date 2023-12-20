@@ -7,7 +7,16 @@
         "telefone": "123456789",
         "_links": {
           "self": {
-              "href": "/fornecedor/1"
+              "href": "/fornecedores/1"
+          },
+          "update": {
+            "href": "/fornecedores/1/update"
+          },
+          "delete": {
+            "href": "/fornecedores/1/delete"
+          },
+          "collection": {
+            "href": "/fornecedores"
           }
       }
       },
@@ -18,7 +27,16 @@
         "telefone": "987654321",
         "_links": {
           "self": {
-              "href": "/fornecedor/2"
+              "href": "/fornecedores/2"
+          },
+          "update": {
+            "href": "/fornecedores/2/update"
+          },
+          "delete": {
+            "href": "/fornecedores/2/delete"
+          },
+          "collection": {
+            "href": "/fornecedores"
           }
       }
       }
